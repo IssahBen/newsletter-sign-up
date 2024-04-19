@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <div class="flex     flex-col items-center md:justify-center  lg:justify-center  w-screen h-screen bg-grey">
+        <div id="main"
+            class="flex   flex-col bg-white  w-full lg:w-fit rounded-xl lg:flex-row  lg:flex-row-reverse lg:space-x-4 lg:p-10">
+            <img src="assets/images/illustration-sign-up-mobile.svg" alt="" class=" lg:hidden w-full mb-10">
+            <img src="assets/images/illustration-sign-up-desktop.svg" alt="" class=" hidden lg:block w-full mb-10">
+            <div class="flex-flex-col pl-6 pr-6 space-y-4 mb-24 lg:mt-24 ">
+                <h1 class="font-sans font-semibold text-5xl text-charcoal_grey">
+                    Stay updated!
+                </h1>
+                <p class="font-sans w-80 tracking-widest font-bold text-grey">
+                    Join 60,000+ proudct managers receiving monthly updates on:
+                </p>
+                <div class="flex space-x-5 items-center">
+                    <img src="assets/images/icon-success.svg" alt="" class="h-10 w-5">
+                    <p class="text-charcoal_grey w-60 tracking-wide">Product discovey and building what matters</p>
+                </div>
+                <div class="flex space-x-5 items-center">
+                    <img src="assets/images/icon-success.svg" alt="" class="h-10 w-5">
+                    <p class="text-charcoal_grey">Measuring to ensure updates are a
+                        success</p>
+                </div>
+                <div class="flex space-x-5 items-center">
+                    <img src="assets/images/icon-success.svg" alt="" class="h-10 w-5">
+                    <p class="text-charcoal_grey">And much more!</p>
+                </div>
+                <form action="" id="form" class="flex flex-col space-y-2 ">
+                    <div class="flex justify-between">
+                        <label for="input" class="'font-black text-xl">Email Address</label>
+                        <div id="error" class=" hidden text-xs text-red-500">InValid email </div>
+                    </div>
+                    <input type="text" id="input" class="w-full rounded-xl h-16 bg-white px-6 border border-gray-400"
+                        placeholder="Enter Your Email Address">
+                    <button id="submit-btn"
+                        class="bg-dark_slate_grey w-full h-16 rounded-lg text-white text-lg">Subsribe to monthlhy
+                        newsletter</button>
+                </form>
+
+            </div>
+
+
+        </div>
+        <div id="success"
+            class="   hidden flex flex-col space-y-4 p-10 md:w-2/6 sm:w-full h-full md:h-fit  bg-white rounded-xl">
+            <img src="assets/images/icon-success.svg" alt="" class="w-24 h-24">
+            <h1 class="text-4xl font-bold tracking-wide text-dark_slate_grey">
+                Thanks For Subscribing!
+            </h1>
+            <p class="text-dark_slate_grey">A confirmation email has been sent <strong id="email"></strong>.PLease
+                open it and
+                click the button
+                inside to
+                confirm your sibscription.</p>
+
+            <button id="dismiss"
+                class="text-center bg-tomato rounded-xl text-white p-4   shadow-xl shadow-red-400 ">Dismiss
+                message</button>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
